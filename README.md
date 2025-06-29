@@ -89,7 +89,16 @@ deepspeed --num_gpus num_of_gpus_in_each_node \
     --fp16 True
 ```
 
-
+## Citation
+If you find the repository useful, please cite the study
+``` Bash
+@article{wang2025uniformity,
+  title={Data Uniformity Improves Training Efficiency and More, with a Convergence Framework Beyond the NTK Regime},
+  author={Wang, Yuqing and Gu, Shangding},
+  journal={Github},
+  year={2025}
+}
+```
 
 
 ## Thanks For

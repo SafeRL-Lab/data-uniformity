@@ -1,0 +1,21 @@
+cd src
+deepspeed --include localhost:0 train.py \
+    --model_name_or_path /models/huggyllama/llama-1-7b \
+    --data_path /dataset/gpt_4o_dataset_9k.json \
+    --output_dir /l2_sgd_llama1_7b_4o_9k_full/ \
+    --num_train_epochs 2 \
+    --model_max_length 512 \
+    --per_device_train_batch_size 64 \
+    --per_device_eval_batch_size 1 \
+    --gradient_accumulation_steps 1 \
+    --evaluation_strategy "no" \
+    --save_strategy "steps" \
+    --save_steps 30 \
+    --save_total_limit 10 \
+    --learning_rate 2e-5 \
+    --warmup_steps 2 \
+    --logging_steps 1 \
+    --lr_scheduler_type "constant" \
+    --gradient_checkpointing True \
+    --deepspeed configs/deepspeed_config_transformers4.31_lr_2e5_l2_sgd.json \
+    --fp16 True

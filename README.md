@@ -95,6 +95,7 @@ deepspeed --num_gpus num_of_gpus_in_each_node \
 ## Thanks For
 
 This project has been inspired by multiple open source projects:
+
 [Llama-X](https://github.com/AetherCortex/Llama-X)
 
 [Meta AI LLaMA](https://arxiv.org/abs/2302.13971v1)

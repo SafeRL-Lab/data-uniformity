@@ -14,9 +14,8 @@
 conda create -n uniformity python=3.10
 conda activate uniformity
 git clone https://github.com/SafeRL-Lab/data-uniformity
+cd data-uniformity
 conda install pytorch==1.12.0 torchvision==0.13.0 torchaudio==0.12.0 cudatoolkit=11.3 -c pytorch
-# pip install transformers==4.31.0
-cd ../..
 pip install -r requirements.txt
 pip install -r dp_train_requirements.txt
 ```

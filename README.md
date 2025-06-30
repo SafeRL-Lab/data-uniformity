@@ -19,6 +19,7 @@ conda install pytorch==1.12.0 torchvision==0.13.0 torchaudio==0.12.0 cudatoolkit
 pip install transformers==4.31.0
 cd ../..
 pip install -r requirements.txt
+pip install -r dp_train_requirements.txt
 ```
 
 - Training data example (e.g., [TeaMs-RL](https://github.com/SafeRL-Lab/TeaMs-RL)):
@@ -53,7 +54,7 @@ deepspeed train.py \
     --learning_rate 2e-5 \
     --warmup_steps 2 \
     --logging_steps 2 \
-    --lr_scheduler_type "cosine" \
+    --lr_scheduler_type "constant" \
     --report_to "tensorboard" \
     --gradient_checkpointing True \
     --deepspeed configs/deepspeed_config.json \
@@ -82,7 +83,7 @@ deepspeed --num_gpus num_of_gpus_in_each_node \
     --learning_rate 2e-5 \
     --warmup_steps 2 \
     --logging_steps 2 \
-    --lr_scheduler_type "cosine" \
+    --lr_scheduler_type "constant" \
     --report_to "tensorboard" \
     --gradient_checkpointing True \
     --deepspeed configs/deepspeed_config.json \

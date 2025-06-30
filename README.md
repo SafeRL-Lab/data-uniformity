@@ -21,12 +21,13 @@ pip install -r dp_train_requirements.txt
 ```
 
 ### Training. 
-- 1. Download datasets (e.g., [TeaMs-RL](https://github.com/SafeRL-Lab/TeaMs-RL)):
+**1. Download datasets** 
+e.g., download [TeaMs-RL](https://github.com/SafeRL-Lab/TeaMs-RL)
 ```bash
 https://github.com/SafeRL-Lab/data-uniformity/dataset/teams_rl/full_dataset_9k.json
 ```
 
-- 2. Convert LLaMA checkpoint to HuggingFace format:
+**2. Convert LLaMA checkpoint to HuggingFace format**
 ```bash
 cd src
 python transformers/src/transformers/models/llama/convert_llama_weights_to_hf.py \
@@ -35,7 +36,7 @@ python transformers/src/transformers/models/llama/convert_llama_weights_to_hf.py
     --output_dir /path/to/llama-7B/hf
 ```
 
-- 3.1 Train LLaMA-7B on DeepSpeed Zero-3:
+**3.1 Train LLaMA-7B on DeepSpeed Zero-3**
 ```bash
 deepspeed train.py \
     --model_name_or_path /path/to/llama-7B/hf \
@@ -59,7 +60,7 @@ deepspeed train.py \
     --deepspeed configs/deepspeed_config.json \
     --fp16 True
 ```
-- 3.2 Train LLaMA-7B on DeepSpeed Zero-3 with Multi-nodes
+**3.2 Train LLaMA-7B on DeepSpeed Zero-3 with Multi-nodes**
 ```bash
 deepspeed --num_gpus num_of_gpus_in_each_node \
     --num_nodes num_of_nodes \

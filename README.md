@@ -38,6 +38,13 @@ python transformers/src/transformers/models/llama/convert_llama_weights_to_hf.py
 
 **3.1 Train LLaMA-7B on DeepSpeed Zero-3**
 ```bash
+cd data-uniformity/scripts/run_cross_loss
+chmod +x dp_run_exp_llama1_7b_9k_4o_full.sh
+./dp_run_exp_llama1_7b_9k_4o_full.sh
+```
+or 
+
+```bash
 deepspeed train.py \
     --model_name_or_path /path/to/llama-7B/hf \
     --data_path /path/to/example_data.json \

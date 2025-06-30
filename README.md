@@ -20,7 +20,7 @@ pip install -r requirements.txt
 pip install -r dp_train_requirements.txt
 ```
 
-### Training. 
+### Training
 **1. Download datasets** 
 e.g., download [TeaMs-RL](https://github.com/SafeRL-Lab/TeaMs-RL)
 ```bash

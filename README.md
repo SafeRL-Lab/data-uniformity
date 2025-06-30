@@ -109,7 +109,7 @@ If you find the repository useful, please cite the study
 ```
 
 
-## Thanks For
+## Acknowledgment
 
 This project has been inspired by multiple open source projects:
 

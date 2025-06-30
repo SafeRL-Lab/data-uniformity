@@ -36,7 +36,7 @@ python transformers/src/transformers/models/llama/convert_llama_weights_to_hf.py
     --output_dir /path/to/llama-7B/hf
 ```
 
-**3.1 Train LLaMA-7B on DeepSpeed Zero-3**
+**3.1 Train LLaMA-7B**
 ```bash
 cd data-uniformity/scripts/run_cross_loss
 chmod +x dp_run_exp_llama1_7b_9k_4o_full.sh
@@ -67,7 +67,7 @@ deepspeed train.py \
     --deepspeed configs/deepspeed_config.json \
     --fp16 True
 ```
-**3.2 Train LLaMA-7B on DeepSpeed Zero-3 with Multi-nodes**
+**3.2 Train LLaMA-7B with Multi-nodes**
 ```bash
 deepspeed --num_gpus num_of_gpus_in_each_node \
     --num_nodes num_of_nodes \

@@ -22,7 +22,7 @@ pip install -r dp_train_requirements.txt
 
 ### Training
 **1. Download datasets** 
-e.g., download [TeaMs-RL](https://github.com/SafeRL-Lab/TeaMs-RL)
+e.g., download [TeaMs-RL](https://huggingface.co/datasets/Shangding-Gu/TeaMs-RL-9k)
 ```bash
 https://github.com/SafeRL-Lab/data-uniformity/dataset/teams_rl/full_dataset_9k.json
 ```
@@ -120,6 +120,7 @@ This project has been inspired by multiple open source projects:
 [Huggingface Transformers Llama](https://github.com/huggingface/transformers/tree/main/src/transformers/models/llama)
 
 [Alpaca](https://crfm.stanford.edu/2023/03/13/alpaca.html) and [Alpaca-LoRA](https://github.com/tloen/alpaca-lora)
+
 
 
 

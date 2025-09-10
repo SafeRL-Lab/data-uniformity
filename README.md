@@ -97,16 +97,7 @@ deepspeed --num_gpus num_of_gpus_in_each_node \
     --fp16 True
 ```
 
-## Citation
-If you find the repository useful, please cite the study
-``` Bash
-@article{wang2025uniformity,
-  title={Data Uniformity Improves Training Efficiency and More, with a Convergence Framework Beyond the NTK Regime},
-  author={Wang, Yuqing and Gu, Shangding},
-  journal={Github},
-  year={2025}
-}
-```
+
 
 
 ## Acknowledgment
@@ -120,6 +111,7 @@ This project has been inspired by multiple open source projects:
 [Huggingface Transformers Llama](https://github.com/huggingface/transformers/tree/main/src/transformers/models/llama)
 
 [Alpaca](https://crfm.stanford.edu/2023/03/13/alpaca.html) and [Alpaca-LoRA](https://github.com/tloen/alpaca-lora)
+
 
 
 

@@ -100,18 +100,6 @@ deepspeed --num_gpus num_of_gpus_in_each_node \
 
 
 
-## Acknowledgment
-
-This project has been inspired by multiple open source projects:
-
-[Llama-X](https://github.com/AetherCortex/Llama-X)
-
-[Meta AI LLaMA](https://arxiv.org/abs/2302.13971v1)
-
-[Huggingface Transformers Llama](https://github.com/huggingface/transformers/tree/main/src/transformers/models/llama)
-
-[Alpaca](https://crfm.stanford.edu/2023/03/13/alpaca.html) and [Alpaca-LoRA](https://github.com/tloen/alpaca-lora)
-
 
 
 

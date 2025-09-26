@@ -10,8 +10,8 @@ import json
 
 import os
 
-os.environ["CUDA_DEVICE_ORDER"] = "PCI_BUS_ID"  # （保证程序cuda序号与实际cuda序号对应）
-os.environ['CUDA_VISIBLE_DEVICES'] = "0,1"  # （代表仅使用第0，1号GPU）
+os.environ["CUDA_DEVICE_ORDER"] = "PCI_BUS_ID"  # 
+os.environ['CUDA_VISIBLE_DEVICES'] = "0,1"  # 
 
 assert (
         "LlamaTokenizer" in transformers._import_structure["models.llama"]
@@ -29,28 +29,9 @@ try:
 except:
     pass
 
-# base_model = "/home/gushangding/MyCode_vt/Lunyu_model/Llama-X/converted_models/llama2-chat-7b" # "/path/to/WizardLM13B",
-# base_model = "/home/gushangding/MyCode_vt/Lunyu_model/Lunyu-LLM"
 
 
-# base_model = "/home/gushangding/MyCode_vt/Lunyu_model/Llama-X/converted_models/llama-1-13b"
-# base_model = "/home/gushangding/MyCode_vt/Lunyu_model/Llama-X/converted_models/llama-2-13b-chat"
-
-# base_model = "/home/gushangding/MyCode_vt/Lunyu_model/Llama-X/trained_models/RL_evol_llama1_7b_ms/checkpoint-240"
-
-# base_model = "/home/gushangding/MyCode_vt/Lunyu_model/Llama-X/converted_models/llama2-chat-7b"
-# base_model = "/home/gushangding/MyCode_vt/Lunyu_model/Llama-X/converted_models/llama-1-7b"
-
-# base_model = "/home/gushangding/MyCode_vt/Lunyu_model/Llama-X/trained_models/llama2_7b_gpt_ans_25k_25dot25k_40k_40dot3k/checkpoint-30"
-# base_model = "/home/gushangding/MyCode_vt/Lunyu_model/Llama-X/trained_models/llama2_7b_gpt_ans_25k_25dot25k/checkpoint-30"
-# base_model = "/home/gushangding/MyCode_vt/Lunyu_model/Llama-X/trained_models/RL_evol_llama2_chat_7B_new_wizard13b_lr_re/checkpoint-30"
-
-
-# base_model = "/home/gushangding/MyCode_vt/Lunyu_model/Llama-X/trained_models/llama1_7b_gpt_ans_25k_25dot25k_40k_40dot3k/checkpoint-200"
-# base_model = "/home/gushangding/MyCode_vt/Lunyu_model/Llama-X/trained_models/llama1_7b_gpt_ans_25k_25dot25k/checkpoint-200"
-# base_model = "/home/gushangding/MyCode_vt/Lunyu_model/Llama-X/trained_models/RL_evol_llama1_7b_ms/checkpoint-400"
-
-base_model = "/home/gushangding/MyCode_vt/Lunyu_model/wizardlm/wizardLM-7B-HF/wizardLM-7B-HF"
+base_model = "/wizardlm/wizardLM-7B-HF/wizardLM-7B-HF"
 
 
 # assert base_model, (
